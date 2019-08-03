@@ -1,6 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: A Lambda Version Cleaner
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: owlhub-lambda-version-cleaner
+    Description: A Lmabd Version Cleaner
+    Author: Nitin Goyal
+    spdxLicenseId: Apache-2.0
+    LicenseUrl: LICENSE
+    ReadmeUrl: README.md
+    Labels: ['lambda']
+    HomePageUrl: 'https://github.com/technovendors/owlhub-lambda-version-cleaner'
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: 'https://github.com/technovendors/owlhub-lambda-version-cleaner'
 Resources:
   lambdaCleaner:
     Type: 'AWS::Serverless::Function'
