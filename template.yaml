@@ -4,7 +4,7 @@ Description: A Lambda Version Cleaner
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: owlhub-lambda-version-cleaner
-    Description: A Lmabd Version Cleaner
+    Description: A Lambda Version Cleaner
     Author: Nitin Goyal
     spdxLicenseId: Apache-2.0
     LicenseUrl: LICENSE
@@ -18,10 +18,10 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime python3.7
+      Runtime: python3.7
       CodeUri: .
       Description: A Lambda Version Cleaner
       MemorySize: 128
       Timeout: 60
       Policies:
-        - LambdaFullAccessPolicy:
+        - AWSLambdaFullAccess
